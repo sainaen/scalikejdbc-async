@@ -5,8 +5,7 @@ jdk:
 scala:
 - 2.11.7
 sudo: false
-script: sbt ++${TRAVIS_SCALA_VERSION} clean coverage test
-after_success: sbt coveralls
+script: sbt ++${TRAVIS_SCALA_VERSION} clean test
 addons:
   postgresql: '9.3'
 before_script:
